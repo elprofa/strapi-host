@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "Transactions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fees": {
+      "type": "biginteger"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "received": {
+      "type": "biginteger"
+    },
+    "otherFees": {
+      "type": "biginteger"
+    },
+    "sent": {
+      "type": "biginteger"
+    },
+    "from": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "client": {
+      "via": "transactions",
+      "model": "clients"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "modalite": {
+      "type": "string"
+    }
+  }
+}

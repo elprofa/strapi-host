@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "Clients",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "transactions": {
+      "via": "client",
+      "collection": "transactions"
+    }
+  }
+}
